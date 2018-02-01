@@ -9,17 +9,9 @@
     <title>Document</title>
 </head>
 
-<body>
+<body id="body">
     <div class="container">
-        <h1>Controlls</h1>
-        <div>
-            <ul>
-                <li>
-                    <button onclick="startSingleton(event)">Singleton</button>
-                </li>
-            </ul>
-        </div>
-        <div id="test"></div>
+        <h1 class="title">Patterns JavaScript</h1>
     </div>
     <!-- <script src="src/patterns/singleton.js"></script> -->
     <!-- <script src="src/patterns/module.js"></script> -->
@@ -30,18 +22,6 @@
     <!-- <script src="src/patterns/decorator.js"></script> -->
     <!-- <script src="src/patterns/facade.js"></script> -->
     <!-- <script src="src/patterns/strategy.js"></script> -->
-    <script>
-        function startSingleton() {
-            var test = document.getElementById('test');
-            var removedElem = test.getElementsByTagName('script');
-            if (removedElem.length) {
-                test.removeChild(removedElem[0]);
-            }
-            var source = document.createElement('script');
-            source.src = 'src/patterns/singleton.js';
-            test.appendChild(source);
-        }
-    </script>
 </body>
 
 </html>
